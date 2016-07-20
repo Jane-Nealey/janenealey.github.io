@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+		<script>
+			function imageSwitch() {
+				var img1 = document.getElementById("basketball2");
+				var img2 = document.getElementById("mountain");
+				var img3 = document.getElementById("janeNealey");
+				var img4 = document.getElementById("shotput");
+				if (img1.src.match("basketball2.jpg")){
+					img1.src = "fallTrees.jpg";
+					img2.src = "flowers.jpg"
+					img3.src = "city3.jpg";
+					img4.src = "artsy2.jpg";
+				} else {
+					img1.src = "basketball2.jpg";
+					img2.src = "mountain.jpg";
+					img3.src = "Jane_Nealey.jpg";
+					img4.src = "shotput.jpg";
+				}
+			}
+		</script>
+<style>
+body{
+	margin:0 auto;
+}
+
+img{
+	width:90%;
+	padding-top:50px;
+	display:block;
+	margin:auto
+	
+}
+
+li {
+     text-align:center;
+	 display:inline;
+	 padding-top:10px;
+	 color: #663B72;
+}
+
+table{
+	width: 100%;
+}
+td{	padding:10px;
+}
+
+h2{
+	text-align:center;
+	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+	text-emphasis:circle;
+}
+</style>
+<title>Jane Nealey - Home</title>
+<link href="cssStyle.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<img src="Jane.jpg" style="width:40%; padding-top:0px; margin-bottom:-70px;"/>
+<table style = "width:26%; margin-left:28%; margin-top:-35px;">
+   <tr>
+  <th> <li><a href="contact.html"><img src="contact.png" alt="home" style="height:90%; width:90%; margin-top:-65px">
+</a></li> </th>
+  <th> <li><a href="activities.html"><img src="activities.png" alt="home" style="height:90%; width:90%;margin-top:-59px"></a></li> </th>
+  <th> <li><a href="portfolio.html"><img src="portfolio.png" alt="home" style="height:90%; width:90%;margin-top:-59px"></a></li> </th>
+  
+  </tr>
+</table>
+<img src="Welcome.png" style="width:25%; height:25%; margin-top:-15px"/>
+<h2>My Name is Jane, and I am a senior at Innovation Academy Charter School</h2>
+<p> </p>
+<table>
+  <tr>
+  <td> <img id="basketball2" src="basketball2.jpg" onClick="imageSwitch()"/></td>
+  <td> <img id="mountain" src="mountain.jpg" onClick="imageSwitch()"/></td>
+  <td> <img id="janeNealey" onClick="imageSwitch()" src="Jane_Nealey.jpg"/></td>
+  <td> <img id="shotput" onClick="imageSwitch()" src="shotput.jpg"/></td>
+  </tr>
+</table>
+
+</body>
+
+</html>
